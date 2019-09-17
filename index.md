@@ -111,7 +111,7 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Please bring your laptop along with software installed as described below. If you run into any problems please contact Claire Hobday via email:  <a href='mailto:{{email}}'>{{Claire.Hobday@ed.ac.uk}}</a> (listed <a href="#setup">below</a>).
+  <strong>Requirements:</strong> Please bring your laptop along with software installed as described below. If you run into any problems please contact Claire Hobday via <a href='mailto:Claire.Hobday@ed.ac.uk'>email</a> (listed <a href="#setup">below</a>).
 </p>
 
 {% comment%}
@@ -396,7 +396,7 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
-
+{% comment %}
 <div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatibility
   is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
   <h3>Git</h3>
@@ -459,6 +459,7 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
+ {% endcomment %}
 
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
