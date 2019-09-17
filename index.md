@@ -173,7 +173,7 @@ Display the contact email address set in the configuration file.
 
 <p>
   <strong>Registration:</strong>
-  <a href="https://2019-09-04-edinburgh-swc.eventbrite.co.uk">Please register</a>
+  <a href="https://forms.gle/esrtxwW8s7a1kPjq9">Please register</a>
   if you would like to attend. All available places have now been filled up, but we can add you to a wait list should people drop out or invite you to the next upcoming event. 
 </p>
 
