@@ -39,9 +39,6 @@ see the changes take effect locally.
 </div>
 {% endif %}
 
-{% comment %}
-
-
 <p id="collaborative_notes">
   We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
 </p>
