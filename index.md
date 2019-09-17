@@ -111,8 +111,7 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>Requirements:</strong> Please bring your laptop along with software installed as described below. If you run into any problems please contact Claire Hobday via email:  <a href='mailto:{{email}}'>{{Claire.Hobday@ed.ac.uk}}</a> (listed <a href="#setup">below</a>).
 </p>
 
 {% comment%}
@@ -175,18 +174,14 @@ Display the contact email address set in the configuration file.
 <p>
   <strong>Registration:</strong>
   <a href="https://2019-09-04-edinburgh-swc.eventbrite.co.uk">Please register</a>
-  if you would like to attend. All available places have already been filled up,
-  however we recommend adding yourself to the waiting list if you are still interested
-  in attending as we anticipate some attendees will cancel. If you have registered
-  and cannot now attend, please cancel your booking so that your place can be offered
-  to someone on the waiting list.
+  if you would like to attend. All available places have now been filled up, but we can add you to a wait list should people drop out or invite you to the next upcoming event. 
 </p>
 
 <hr/>
 
 {% comment %} 
 SURVEYS - DO NOT EDIT SURVEY LINKS 
-{% endcomment %}
+
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 {% if site.carpentry == "swc" %} 
@@ -201,7 +196,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endif %}
 
 <hr/>
-
+{% endcomment %}
 
 {% comment %}
 SCHEDULE
