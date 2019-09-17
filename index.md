@@ -2,19 +2,19 @@
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "School of Chemistry University of Edinburgh"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Room T40, Joseph Black Building, Edinburgh, EH9 3FJ "      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng: "55.953251,-3.188267"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "26-27 September 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:30 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Valentina Erastova", "Clair Hobday", "Antonia Mey"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Salome Llabres"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+venue: "University of Edinburgh hosted by the School of Chemistry"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Murchinson House"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "gb"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+latlng: "55.921711,-3.173591"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+humandate: "26-27 Sep 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2019-09-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-09-27    # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Valentina Erastova", "Claire Hobday", "Antonia Mey"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Salome Llabres", "Mario Antonioletti"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["antonia.mey@ed.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes:    https://pad.carpentries.org/2019-09-26-edinburgh-swc          # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -31,18 +31,6 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 
 
 
-{% comment %}
-For a workshop please delete the following block
-{% endcomment %}
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to customize your
-own website. If you are running a self-organized workshop or have not put in a
-workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know
-about your workshop and our administrator may contact you if we need any extra
-information.
-</div>
-
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
@@ -52,23 +40,11 @@ see the changes take effect locally.
 {% endif %}
 
 {% comment %}
-EVENTBRITE
 
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
+<p id="collaborative_notes">
+  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+</p>
 
 <h2 id="general">General Information</h2>
 
@@ -197,6 +173,16 @@ Display the contact email address set in the configuration file.
   to-be-announced
   {% endif %}
   for more information.
+</p>
+
+<p>
+  <strong>Registration:</strong>
+  <a href="https://2019-09-04-edinburgh-swc.eventbrite.co.uk">Please register</a>
+  if you would like to attend. All available places have already been filled up,
+  however we recommend adding yourself to the waiting list if you are still interested
+  in attending as we anticipate some attendees will cancel. If you have registered
+  and cannot now attend, please cancel your booking so that your place can be offered
+  to someone on the waiting list.
 </p>
 
 <hr/>
@@ -383,13 +369,13 @@ please preview your site before committing, and make sure to run
           <li>
             If your "HOME" environment variable is not set (or you don't know what this is):
             <ol>
-              <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press <kbd>Enter</kbd>)</li>
+              <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
               <li>
                 Type the following line into the command prompt window exactly as shown:
                 <p><code>setx HOME "%USERPROFILE%"</code></p>
               </li>
-              <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code></li>
-              <li>Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd></li>
+              <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
+              <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
             </ol>
           </li>
         </ol>
@@ -645,6 +631,7 @@ please preview your site before committing, and make sure to run
   {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
+<!--
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
@@ -700,7 +687,9 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
+-->
 
+<!--
 <div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
   <h3>SQLite</h3>
 
@@ -781,7 +770,9 @@ please preview your site before committing, and make sure to run
       <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
       Instructors will provide a workaround for it if needed.</strong></p>
 </div> {% comment %} End of 'SQLite' section. {% endcomment %}
+-->
 
+<!--
 <div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
   <h3>OpenRefine</h3>
   <p>
@@ -833,6 +824,7 @@ please preview your site before committing, and make sure to run
     </div>
   </div>
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
+-->
 
 {% comment %}
 <div id="vm">
